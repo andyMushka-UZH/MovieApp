@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyBackgroundView">
+            <connections>
+                <outlet property="descriptionImageView" destination="CoM-38-Qjv" id="kdp-h1-7Mg"/>
+                <outlet property="descriptionLabel" destination="7BV-p9-fFj" id="twk-cw-1pM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry, we didn't find anything for your request." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BV-p9-fFj">
+                    <rect key="frame" x="50" y="543" width="314" height="50.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sad_smail" translatesAutoresizingMaskIntoConstraints="NO" id="CoM-38-Qjv">
+                    <rect key="frame" x="90" y="249" width="234" height="234"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CoM-38-Qjv" secondAttribute="height" multiplier="1:1" id="D6Q-25-9IU"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7BV-p9-fFj" firstAttribute="top" secondItem="CoM-38-Qjv" secondAttribute="bottom" constant="60" id="FFC-7u-biR"/>
+                <constraint firstItem="7BV-p9-fFj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="GSa-W5-6jf"/>
+                <constraint firstItem="7BV-p9-fFj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="120" id="Uno-V3-erT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CoM-38-Qjv" secondAttribute="trailing" constant="90" id="nBP-sC-Jra"/>
+                <constraint firstItem="CoM-38-Qjv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="90" id="p0C-CO-6TY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7BV-p9-fFj" secondAttribute="trailing" constant="50" id="pjT-nQ-R0B"/>
+                <constraint firstItem="7BV-p9-fFj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qIp-qY-l3m"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_sad_smail" width="140" height="140"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
